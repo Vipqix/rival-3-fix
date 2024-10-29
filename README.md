@@ -1,21 +1,21 @@
-# rival-3-fix
-fixes the steelseries rival 3 blinking purple issue
-
-
-
 # ℹ **INFO** 
 ```
 this code is from the official steelseries rival 3 recovery tool just decompiled.
-```
-```
-Drivers and firmware are just for if someone needs it i dont really know
 ```
 ```
 if you dont want to install python i'll have the build in releases, smart screen and 
 antiviruses might flag it since it not singed and im not paying for a $200 signature
 ```
 ```
-made this because support never answered and i'm not trusting any random exes lol
+made this because support never answered and i'm not trusting any random EXEs lol
+```
+# ℹ **INFO: Drivers**
+```
+Drivers are there but they're not officially downloaded from SteelSeries 
+```
+# ℹ **INFO: Firmware**
+```
+I just found the firmware somewhere in my files 👍
 ```
 
 # 🧠 **HOW TO USE** 
