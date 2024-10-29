@@ -1,0 +1,542 @@
+;===============================================================
+; sshid.inf
+;===============================================================
+
+[Version]
+Signature="$CHICAGO$"
+Class=HIDClass
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%ManufacturerName%
+CatalogFile=sshid.cat
+PnpLockdown=1
+DriverVer = 08/23/2024,2.11.2.0
+
+[DestinationDirs]
+CopyFilterDriver = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+sshid.sys = 1,,
+
+;===============================================================
+; Install Section
+;===============================================================
+
+[Manufacturer]
+%ManufacturerName%=SteelSeries, NTamd64.10.0...14393, NTamd64.10.0...22000
+
+[SteelSeries.NTamd64.10.0...14393]
+;; If you are adding new PID in this 10.0...14393 (Win10) section, please do not forget to add new PID in 10.0...22000 (Win11) section too
+%DeviceDesc.VID_1038.PID_0472% = sshid.Device_Win10, USB\VID_1038&PID_0472&MI_01
+%DeviceDesc.VID_1038.PID_0475% = sshid.Device_Win10, USB\VID_1038&PID_0475&MI_01
+%DeviceDesc.VID_1038.PID_0615% = sshid.Device_Win10, USB\VID_1038&PID_0615&MI_00
+%DeviceDesc.VID_1038.PID_0616% = sshid.Device_Win10, USB\VID_1038&PID_0616&MI_00
+%DeviceDesc.VID_1038.PID_0617% = sshid.Device_Win10, USB\VID_1038&PID_0617&MI_00
+%DeviceDesc.VID_1038.PID_0619% = sshid.Device_Win10, USB\VID_1038&PID_0619&MI_00
+%DeviceDesc.VID_1038.PID_1200% = sshid.Device_Win10, USB\VID_1038&PID_1200&MI_01
+%DeviceDesc.VID_1038.PID_1202% = sshid.Device_Win10, USB\VID_1038&PID_1202&MI_01
+%DeviceDesc.VID_1038.PID_1204% = sshid.Device_Win10, USB\VID_1038&PID_1204&MI_01
+%DeviceDesc.VID_1038.PID_1206% = sshid.Device_Win10, USB\VID_1038&PID_1206&MI_01
+%DeviceDesc.VID_1038.PID_1208% = sshid.Device_Win10, USB\VID_1038&PID_1208&MI_01
+%DeviceDesc.VID_1038.PID_120A% = sshid.Device_Win10, USB\VID_1038&PID_120A&MI_01
+%DeviceDesc.VID_1038.PID_1356% = sshid.Device_Win10, USB\VID_1038&PID_1356&MI_00
+%DeviceDesc.VID_1038.PID_1358% = sshid.Device_Win10, USB\VID_1038&PID_1358&MI_00
+%DeviceDesc.VID_1038.PID_135A% = sshid.Device_Win10, USB\VID_1038&PID_135A&MI_00
+%DeviceDesc.VID_1038.PID_1361% = sshid.Device_Win10, USB\VID_1038&PID_1361&MI_00
+%DeviceDesc.VID_1038.PID_1362% = sshid.Device_Win10, USB\VID_1038&PID_1362&MI_01
+%DeviceDesc.VID_1038.PID_1369% = sshid.Device_Win10, USB\VID_1038&PID_1369&MI_01
+%DeviceDesc.VID_1038.PID_136B% = sshid.Device_Win10, USB\VID_1038&PID_136B&MI_00
+%DeviceDesc.VID_1038.PID_136D% = sshid.Device_Win10, USB\VID_1038&PID_136D&MI_01
+%DeviceDesc.VID_1038.PID_136F% = sshid.Device_Win10, USB\VID_1038&PID_136F&MI_01
+%DeviceDesc.VID_1038.PID_137C% = sshid.Device_Win10, USB\VID_1038&PID_137C&MI_01
+%DeviceDesc.VID_1038.PID_137E% = sshid.Device_Win10, USB\VID_1038&PID_137E&MI_01
+%DeviceDesc.VID_1038.PID_1380% = sshid.Device_Win10, USB\VID_1038&PID_1380&MI_01
+%DeviceDesc.VID_1038.PID_1384% = sshid.Device_Win10, USB\VID_1038&PID_1384&MI_01
+%DeviceDesc.VID_1038.PID_1386% = sshid.Device_Win10, USB\VID_1038&PID_1386&MI_01
+%DeviceDesc.VID_1038.PID_1386.2% = sshid.Device_Win10, USB\VID_1038&PID_1386&MI_02
+%DeviceDesc.VID_1038.PID_1388% = sshid.Device_Win10, USB\VID_1038&PID_1388&MI_01
+%DeviceDesc.VID_1038.PID_1390% = sshid.Device_Win10, USB\VID_1038&PID_1390&MI_01
+%DeviceDesc.VID_1038.PID_1392% = sshid.Device_Win10, USB\VID_1038&PID_1392&MI_01
+%DeviceDesc.VID_1038.PID_1394% = sshid.Device_Win10, USB\VID_1038&PID_1394&MI_01
+%DeviceDesc.VID_1038.PID_1600% = sshid.Device_Win10, USB\VID_1038&PID_1600&MI_01
+%DeviceDesc.VID_1038.PID_1600% = sshid.Device_Win10, USB\VID_1038&PID_1600&MI_03
+%DeviceDesc.VID_1038.PID_1603% = sshid.Device_Win10, USB\VID_1038&PID_1603&MI_01
+%DeviceDesc.VID_1038.PID_1603% = sshid.Device_Win10, USB\VID_1038&PID_1603&MI_03
+%DeviceDesc.VID_1038.PID_1605% = sshid.Device_Win10, USB\VID_1038&PID_1605&MI_01
+%DeviceDesc.VID_1038.PID_1605% = sshid.Device_Win10, USB\VID_1038&PID_1605&MI_03
+%DeviceDesc.VID_1038.PID_1607% = sshid.Device_Win10, USB\VID_1038&PID_1607&MI_00
+%DeviceDesc.VID_1038.PID_1607% = sshid.Device_Win10, USB\VID_1038&PID_1607&MI_03
+%DeviceDesc.VID_1038.PID_1609% = sshid.Device_Win10, USB\VID_1038&PID_1609&MI_00
+%DeviceDesc.VID_1038.PID_1609% = sshid.Device_Win10, USB\VID_1038&PID_1609&MI_03
+%DeviceDesc.VID_1038.PID_160C% = sshid.Device_Win10, USB\VID_1038&PID_160C&MI_00
+%DeviceDesc.VID_1038.PID_160C% = sshid.Device_Win10, USB\VID_1038&PID_160C&MI_03
+%DeviceDesc.VID_1038.PID_160E% = sshid.Device_Win10, USB\VID_1038&PID_160E&MI_00
+%DeviceDesc.VID_1038.PID_1610% = sshid.Device_Win10, USB\VID_1038&PID_1610&MI_00
+%DeviceDesc.VID_1038.PID_1610% = sshid.Device_Win10, USB\VID_1038&PID_1610&MI_02
+%DeviceDesc.VID_1038.PID_1612% = sshid.Device_Win10, USB\VID_1038&PID_1612&MI_00
+%DeviceDesc.VID_1038.PID_1612% = sshid.Device_Win10, USB\VID_1038&PID_1612&MI_02
+%DeviceDesc.VID_1038.PID_1614% = sshid.Device_Win10, USB\VID_1038&PID_1614&MI_00
+%DeviceDesc.VID_1038.PID_1614% = sshid.Device_Win10, USB\VID_1038&PID_1614&MI_02
+%DeviceDesc.VID_1038.PID_1616% = sshid.Device_Win10, USB\VID_1038&PID_1616&MI_00
+%DeviceDesc.VID_1038.PID_1618% = sshid.Device_Win10, USB\VID_1038&PID_1618&MI_00
+%DeviceDesc.VID_1038.PID_1618% = sshid.Device_Win10, USB\VID_1038&PID_1618&MI_02
+%DeviceDesc.VID_1038.PID_161A% = sshid.Device_Win10, USB\VID_1038&PID_161A&MI_00
+%DeviceDesc.VID_1038.PID_161C% = sshid.Device_Win10, USB\VID_1038&PID_161C&MI_00
+%DeviceDesc.VID_1038.PID_161C% = sshid.Device_Win10, USB\VID_1038&PID_161C&MI_02
+%DeviceDesc.VID_1038.PID_161E% = sshid.Device_Win10, USB\VID_1038&PID_161E&MI_00
+%DeviceDesc.VID_1038.PID_161E% = sshid.Device_Win10, USB\VID_1038&PID_161E&MI_02
+%DeviceDesc.VID_1038.PID_1620% = sshid.Device_Win10, USB\VID_1038&PID_1620&MI_00
+%DeviceDesc.VID_1038.PID_1620% = sshid.Device_Win10, USB\VID_1038&PID_1620&MI_02
+%DeviceDesc.VID_1038.PID_1622% = sshid.Device_Win10, USB\VID_1038&PID_1622&MI_00
+%DeviceDesc.VID_1038.PID_1622% = sshid.Device_Win10, USB\VID_1038&PID_1622&MI_02
+%DeviceDesc.VID_1038.PID_1624% = sshid.Device_Win10, USB\VID_1038&PID_1624&MI_01
+%DeviceDesc.VID_1038.PID_1626% = sshid.Device_Win10, USB\VID_1038&PID_1626&MI_01
+%DeviceDesc.VID_1038.PID_1628% = sshid.Device_Win10, USB\VID_1038&PID_1628&MI_00
+%DeviceDesc.VID_1038.PID_1628% = sshid.Device_Win10, USB\VID_1038&PID_1628&MI_02
+%DeviceDesc.VID_1038.PID_1630% = sshid.Device_Win10, USB\VID_1038&PID_1630&MI_01
+%DeviceDesc.VID_1038.PID_1632% = sshid.Device_Win10, USB\VID_1038&PID_1632&MI_01
+%DeviceDesc.VID_1038.PID_1634% = sshid.Device_Win10, USB\VID_1038&PID_1634&MI_00
+%DeviceDesc.VID_1038.PID_1634% = sshid.Device_Win10, USB\VID_1038&PID_1634&MI_02
+%DeviceDesc.VID_1038.PID_1700% = sshid.Device_Win10, USB\VID_1038&PID_1700&MI_01
+%DeviceDesc.VID_1038.PID_1702% = sshid.Device_Win10, USB\VID_1038&PID_1702&MI_01
+%DeviceDesc.VID_1038.PID_1704% = sshid.Device_Win10, USB\VID_1038&PID_1704&MI_01
+%DeviceDesc.VID_1038.PID_1706% = sshid.Device_Win10, USB\VID_1038&PID_1706&MI_01
+%DeviceDesc.VID_1038.PID_1707% = sshid.Device_Win10, USB\VID_1038&PID_1707&MI_01
+%DeviceDesc.VID_1038.PID_1708% = sshid.Device_Win10, USB\VID_1038&PID_1708&MI_01
+%DeviceDesc.VID_1038.PID_1709% = sshid.Device_Win10, USB\VID_1038&PID_1709&MI_01
+%DeviceDesc.VID_1038.PID_170A% = sshid.Device_Win10, USB\VID_1038&PID_170A&MI_01
+%DeviceDesc.VID_1038.PID_170B% = sshid.Device_Win10, USB\VID_1038&PID_170B&MI_01
+%DeviceDesc.VID_1038.PID_170C% = sshid.Device_Win10, USB\VID_1038&PID_170C&MI_01
+%DeviceDesc.VID_1038.PID_170D% = sshid.Device_Win10, USB\VID_1038&PID_170D&MI_01
+%DeviceDesc.VID_1038.PID_170E% = sshid.Device_Win10, USB\VID_1038&PID_170E&MI_01
+%DeviceDesc.VID_1038.PID_1710% = sshid.Device_Win10, USB\VID_1038&PID_1710&MI_01
+%DeviceDesc.VID_1038.PID_1712% = sshid.Device_Win10, USB\VID_1038&PID_1712&MI_01
+%DeviceDesc.VID_1038.PID_1714% = sshid.Device_Win10, USB\VID_1038&PID_1714&MI_01
+%DeviceDesc.VID_1038.PID_1716% = sshid.Device_Win10, USB\VID_1038&PID_1716&MI_01
+%DeviceDesc.VID_1038.PID_1718% = sshid.Device_Win10, USB\VID_1038&PID_1718&MI_01
+%DeviceDesc.VID_1038.PID_171A% = sshid.Device_Win10, USB\VID_1038&PID_171A&MI_01
+%DeviceDesc.VID_1038.PID_171C% = sshid.Device_Win10, USB\VID_1038&PID_171C&MI_01
+%DeviceDesc.VID_1038.PID_171E% = sshid.Device_Win10, USB\VID_1038&PID_171E&MI_01
+%DeviceDesc.VID_1038.PID_1720% = sshid.Device_Win10, USB\VID_1038&PID_1720&MI_01
+%DeviceDesc.VID_1038.PID_1722% = sshid.Device_Win10, USB\VID_1038&PID_1722&MI_01
+%DeviceDesc.VID_1038.PID_1724% = sshid.Device_Win10, USB\VID_1038&PID_1724&MI_01
+%DeviceDesc.VID_1038.PID_1726% = sshid.Device_Win10, USB\VID_1038&PID_1726&MI_01
+%DeviceDesc.VID_1038.PID_1729% = sshid.Device_Win10, USB\VID_1038&PID_1729&MI_01
+%DeviceDesc.VID_1038.PID_172B% = sshid.Device_Win10, USB\VID_1038&PID_172B&MI_01
+%DeviceDesc.VID_1038.PID_172E% = sshid.Device_Win10, USB\VID_1038&PID_172E&MI_01
+%DeviceDesc.VID_1038.PID_1730% = sshid.Device_Win10, USB\VID_1038&PID_1730&MI_01
+%DeviceDesc.VID_1038.PID_1736% = sshid.Device_Win10, USB\VID_1038&PID_1736&MI_01
+%DeviceDesc.VID_1038.PID_1800% = sshid.Device_Win10, USB\VID_1038&PID_1800&MI_01
+%DeviceDesc.VID_1038.PID_1810% = sshid.Device_Win10, USB\VID_1038&PID_1810&MI_01
+%DeviceDesc.VID_1038.PID_1814% = sshid.Device_Win10, USB\VID_1038&PID_1814&MI_01
+%DeviceDesc.VID_1038.PID_1816% = sshid.Device_Win10, USB\VID_1038&PID_1816&MI_01
+%DeviceDesc.VID_1038.PID_1824% = sshid.Device_Win10, USB\VID_1038&PID_1824&MI_00
+%DeviceDesc.VID_1038.PID_1826% = sshid.Device_Win10, USB\VID_1038&PID_1826&MI_01
+%DeviceDesc.VID_1038.PID_182A% = sshid.Device_Win10, USB\VID_1038&PID_182A&MI_01
+%DeviceDesc.VID_1038.PID_182C% = sshid.Device_Win10, USB\VID_1038&PID_182C&MI_01
+%DeviceDesc.VID_1038.PID_182E% = sshid.Device_Win10, USB\VID_1038&PID_182E&MI_01
+%DeviceDesc.VID_1038.PID_1830% = sshid.Device_Win10, USB\VID_1038&PID_1830&MI_00
+%DeviceDesc.VID_1038.PID_1832% = sshid.Device_Win10, USB\VID_1038&PID_1832&MI_01
+%DeviceDesc.VID_1038.PID_1834% = sshid.Device_Win10, USB\VID_1038&PID_1834&MI_01
+%DeviceDesc.VID_1038.PID_1836% = sshid.Device_Win10, USB\VID_1038&PID_1836&MI_00
+%DeviceDesc.VID_1038.PID_1838% = sshid.Device_Win10, USB\VID_1038&PID_1838&MI_00
+%DeviceDesc.VID_1038.PID_183A% = sshid.Device_Win10, USB\VID_1038&PID_183A&MI_00
+%DeviceDesc.VID_1038.PID_183C% = sshid.Device_Win10, USB\VID_1038&PID_183C&MI_01
+%DeviceDesc.VID_1038.PID_183E% = sshid.Device_Win10, USB\VID_1038&PID_183E&MI_01
+%DeviceDesc.VID_1038.PID_1840% = sshid.Device_Win10, USB\VID_1038&PID_1840&MI_00
+%DeviceDesc.VID_1038.PID_1842% = sshid.Device_Win10, USB\VID_1038&PID_1842&MI_00
+%DeviceDesc.VID_1038.PID_1848% = sshid.Device_Win10, USB\VID_1038&PID_1848&MI_00
+%DeviceDesc.VID_1038.PID_184A% = sshid.Device_Win10, USB\VID_1038&PID_184A&MI_00
+%DeviceDesc.VID_1038.PID_184C% = sshid.Device_Win10, USB\VID_1038&PID_184C&MI_00
+%DeviceDesc.VID_1038.PID_184D% = sshid.Device_Win10, USB\VID_1038&PID_184D&MI_00
+%DeviceDesc.VID_1038.PID_1850% = sshid.Device_Win10, USB\VID_1038&PID_1850&MI_00
+%DeviceDesc.VID_1038.PID_1852% = sshid.Device_Win10, USB\VID_1038&PID_1852&MI_00
+%DeviceDesc.VID_1038.PID_1854% = sshid.Device_Win10, USB\VID_1038&PID_1854&MI_00
+%DeviceDesc.VID_1038.PID_1856% = sshid.Device_Win10, USB\VID_1038&PID_1856&MI_01
+%DeviceDesc.VID_1038.PID_1858% = sshid.Device_Win10, USB\VID_1038&PID_1858&MI_00
+%DeviceDesc.VID_1038.PID_185A% = sshid.Device_Win10, USB\VID_1038&PID_185A&MI_00
+%DeviceDesc.VID_1038.PID_185C% = sshid.Device_Win10, USB\VID_1038&PID_185C&MI_00
+%DeviceDesc.VID_1038.PID_185E% = sshid.Device_Win10, USB\VID_1038&PID_185E&MI_00
+%DeviceDesc.VID_1038.PID_1860% = sshid.Device_Win10, USB\VID_1038&PID_1860&MI_00
+%DeviceDesc.VID_1038.PID_1862% = sshid.Device_Win10, USB\VID_1038&PID_1862&MI_00
+%DeviceDesc.VID_1038.PID_1640% = sshid.Device_Win10, USB\VID_1038&PID_1640&MI_00
+%DeviceDesc.VID_1038.PID_1640% = sshid.Device_Win10, USB\VID_1038&PID_1640&MI_02
+%DeviceDesc.VID_1038.PID_1642% = sshid.Device_Win10, USB\VID_1038&PID_1642&MI_00
+%DeviceDesc.VID_1038.PID_1642% = sshid.Device_Win10, USB\VID_1038&PID_1642&MI_02
+%DeviceDesc.VID_1038.PID_1644% = sshid.Device_Win10, USB\VID_1038&PID_1644&MI_01
+%DeviceDesc.VID_1038.PID_1646% = sshid.Device_Win10, USB\VID_1038&PID_1646&MI_01
+%DeviceDesc.VID_1038.PID_1874% = sshid.Device_Win10, USB\VID_1038&PID_1874&MI_00
+%DeviceDesc.VID_1038.PID_1876% = sshid.Device_Win10, USB\VID_1038&PID_1876&MI_00
+%DeviceDesc.VID_1038.PID_1650% = sshid.Device_Win10, USB\VID_1038&PID_1650&MI_00
+%DeviceDesc.VID_1038.PID_1650% = sshid.Device_Win10, USB\VID_1038&PID_1650&MI_02
+%DeviceDesc.VID_1038.PID_1652% = sshid.Device_Win10, USB\VID_1038&PID_1652&MI_00
+%DeviceDesc.VID_1038.PID_1652% = sshid.Device_Win10, USB\VID_1038&PID_1652&MI_02
+%DeviceDesc.VID_1038.PID_1648% = sshid.Device_Win10, USB\VID_1038&PID_1648&MI_00
+%DeviceDesc.VID_1038.PID_1648% = sshid.Device_Win10, USB\VID_1038&PID_1648&MI_02
+%DeviceDesc.VID_1038.PID_164A% = sshid.Device_Win10, USB\VID_1038&PID_164A&MI_01
+%DeviceDesc.VID_1038.PID_164C% = sshid.Device_Win10, USB\VID_1038&PID_164C&MI_01
+;; If you are adding new PID in this 10.0...14393 (Win10) section, please do not forget to add new PID in 10.0...22000 (Win11) section too
+
+[SteelSeries.NTamd64.10.0...22000]
+;; If you are adding new PID in this 10.0...22000 (Win11) section, please do not forget to add new PID in 10.0...14393 (Win10) section too
+%DeviceDesc.VID_1038.PID_0472% = sshid.Device_Win11, USB\VID_1038&PID_0472&MI_01
+%DeviceDesc.VID_1038.PID_0475% = sshid.Device_Win11, USB\VID_1038&PID_0475&MI_01
+%DeviceDesc.VID_1038.PID_0615% = sshid.Device_Win11, USB\VID_1038&PID_0615&MI_00
+%DeviceDesc.VID_1038.PID_0616% = sshid.Device_Win11, USB\VID_1038&PID_0616&MI_00
+%DeviceDesc.VID_1038.PID_0617% = sshid.Device_Win11, USB\VID_1038&PID_0617&MI_00
+%DeviceDesc.VID_1038.PID_0619% = sshid.Device_Win11, USB\VID_1038&PID_0619&MI_00
+%DeviceDesc.VID_1038.PID_1200% = sshid.Device_Win11, USB\VID_1038&PID_1200&MI_01
+%DeviceDesc.VID_1038.PID_1202% = sshid.Device_Win11, USB\VID_1038&PID_1202&MI_01
+%DeviceDesc.VID_1038.PID_1204% = sshid.Device_Win11, USB\VID_1038&PID_1204&MI_01
+%DeviceDesc.VID_1038.PID_1206% = sshid.Device_Win11, USB\VID_1038&PID_1206&MI_01
+%DeviceDesc.VID_1038.PID_1208% = sshid.Device_Win11, USB\VID_1038&PID_1208&MI_01
+%DeviceDesc.VID_1038.PID_120A% = sshid.Device_Win11, USB\VID_1038&PID_120A&MI_01
+%DeviceDesc.VID_1038.PID_1356% = sshid.Device_Win11, USB\VID_1038&PID_1356&MI_00
+%DeviceDesc.VID_1038.PID_1358% = sshid.Device_Win11, USB\VID_1038&PID_1358&MI_00
+%DeviceDesc.VID_1038.PID_135A% = sshid.Device_Win11, USB\VID_1038&PID_135A&MI_00
+%DeviceDesc.VID_1038.PID_1361% = sshid.Device_Win11, USB\VID_1038&PID_1361&MI_00
+%DeviceDesc.VID_1038.PID_1362% = sshid.Device_Win11, USB\VID_1038&PID_1362&MI_01
+%DeviceDesc.VID_1038.PID_1369% = sshid.Device_Win11, USB\VID_1038&PID_1369&MI_01
+%DeviceDesc.VID_1038.PID_136B% = sshid.Device_Win11, USB\VID_1038&PID_136B&MI_00
+%DeviceDesc.VID_1038.PID_136D% = sshid.Device_Win11, USB\VID_1038&PID_136D&MI_01
+%DeviceDesc.VID_1038.PID_136F% = sshid.Device_Win11, USB\VID_1038&PID_136F&MI_01
+%DeviceDesc.VID_1038.PID_137C% = sshid.Device_Win11, USB\VID_1038&PID_137C&MI_01
+%DeviceDesc.VID_1038.PID_137E% = sshid.Device_Win11, USB\VID_1038&PID_137E&MI_01
+%DeviceDesc.VID_1038.PID_1380% = sshid.Device_Win11, USB\VID_1038&PID_1380&MI_01
+%DeviceDesc.VID_1038.PID_1384% = sshid.Device_Win11, USB\VID_1038&PID_1384&MI_01
+%DeviceDesc.VID_1038.PID_1386% = sshid.Device_Win11, USB\VID_1038&PID_1386&MI_01
+%DeviceDesc.VID_1038.PID_1386.2% = sshid.Device_Win11, USB\VID_1038&PID_1386&MI_02
+%DeviceDesc.VID_1038.PID_1388% = sshid.Device_Win11, USB\VID_1038&PID_1388&MI_01
+%DeviceDesc.VID_1038.PID_1390% = sshid.Device_Win11, USB\VID_1038&PID_1390&MI_01
+%DeviceDesc.VID_1038.PID_1392% = sshid.Device_Win11, USB\VID_1038&PID_1392&MI_01
+%DeviceDesc.VID_1038.PID_1394% = sshid.Device_Win11, USB\VID_1038&PID_1394&MI_01
+%DeviceDesc.VID_1038.PID_1600% = sshid.Device_Win11, USB\VID_1038&PID_1600&MI_01
+%DeviceDesc.VID_1038.PID_1600% = sshid.Device_Win11, USB\VID_1038&PID_1600&MI_03
+%DeviceDesc.VID_1038.PID_1603% = sshid.Device_Win11, USB\VID_1038&PID_1603&MI_01
+%DeviceDesc.VID_1038.PID_1603% = sshid.Device_Win11, USB\VID_1038&PID_1603&MI_03
+%DeviceDesc.VID_1038.PID_1605% = sshid.Device_Win11, USB\VID_1038&PID_1605&MI_01
+%DeviceDesc.VID_1038.PID_1605% = sshid.Device_Win11, USB\VID_1038&PID_1605&MI_03
+%DeviceDesc.VID_1038.PID_1607% = sshid.Device_Win11, USB\VID_1038&PID_1607&MI_00
+%DeviceDesc.VID_1038.PID_1607% = sshid.Device_Win11, USB\VID_1038&PID_1607&MI_03
+%DeviceDesc.VID_1038.PID_1609% = sshid.Device_Win11, USB\VID_1038&PID_1609&MI_00
+%DeviceDesc.VID_1038.PID_1609% = sshid.Device_Win11, USB\VID_1038&PID_1609&MI_03
+%DeviceDesc.VID_1038.PID_160C% = sshid.Device_Win11, USB\VID_1038&PID_160C&MI_00
+%DeviceDesc.VID_1038.PID_160C% = sshid.Device_Win11, USB\VID_1038&PID_160C&MI_03
+%DeviceDesc.VID_1038.PID_160E% = sshid.Device_Win11, USB\VID_1038&PID_160E&MI_00
+%DeviceDesc.VID_1038.PID_1610% = sshid.Device_Win11, USB\VID_1038&PID_1610&MI_00
+%DeviceDesc.VID_1038.PID_1610% = sshid.Device_Win11, USB\VID_1038&PID_1610&MI_02
+%DeviceDesc.VID_1038.PID_1612% = sshid.Device_Win11, USB\VID_1038&PID_1612&MI_00
+%DeviceDesc.VID_1038.PID_1612% = sshid.Device_Win11, USB\VID_1038&PID_1612&MI_02
+%DeviceDesc.VID_1038.PID_1614% = sshid.Device_Win11, USB\VID_1038&PID_1614&MI_00
+%DeviceDesc.VID_1038.PID_1614% = sshid.Device_Win11, USB\VID_1038&PID_1614&MI_02
+%DeviceDesc.VID_1038.PID_1616% = sshid.Device_Win11, USB\VID_1038&PID_1616&MI_00
+%DeviceDesc.VID_1038.PID_1618% = sshid.Device_Win11, USB\VID_1038&PID_1618&MI_00
+%DeviceDesc.VID_1038.PID_1618% = sshid.Device_Win11, USB\VID_1038&PID_1618&MI_02
+%DeviceDesc.VID_1038.PID_161A% = sshid.Device_Win11, USB\VID_1038&PID_161A&MI_00
+%DeviceDesc.VID_1038.PID_161C% = sshid.Device_Win11, USB\VID_1038&PID_161C&MI_00
+%DeviceDesc.VID_1038.PID_161C% = sshid.Device_Win11, USB\VID_1038&PID_161C&MI_02
+%DeviceDesc.VID_1038.PID_161E% = sshid.Device_Win11, USB\VID_1038&PID_161E&MI_00
+%DeviceDesc.VID_1038.PID_161E% = sshid.Device_Win11, USB\VID_1038&PID_161E&MI_02
+%DeviceDesc.VID_1038.PID_1620% = sshid.Device_Win11, USB\VID_1038&PID_1620&MI_00
+%DeviceDesc.VID_1038.PID_1620% = sshid.Device_Win11, USB\VID_1038&PID_1620&MI_02
+%DeviceDesc.VID_1038.PID_1622% = sshid.Device_Win11, USB\VID_1038&PID_1622&MI_00
+%DeviceDesc.VID_1038.PID_1622% = sshid.Device_Win11, USB\VID_1038&PID_1622&MI_02
+%DeviceDesc.VID_1038.PID_1624% = sshid.Device_Win11, USB\VID_1038&PID_1624&MI_01
+%DeviceDesc.VID_1038.PID_1626% = sshid.Device_Win11, USB\VID_1038&PID_1626&MI_01
+%DeviceDesc.VID_1038.PID_1628% = sshid.Device_Win11, USB\VID_1038&PID_1628&MI_00
+%DeviceDesc.VID_1038.PID_1628% = sshid.Device_Win11, USB\VID_1038&PID_1628&MI_02
+%DeviceDesc.VID_1038.PID_1630% = sshid.Device_Win11, USB\VID_1038&PID_1630&MI_01
+%DeviceDesc.VID_1038.PID_1632% = sshid.Device_Win11, USB\VID_1038&PID_1632&MI_01
+%DeviceDesc.VID_1038.PID_1634% = sshid.Device_Win11, USB\VID_1038&PID_1634&MI_00
+%DeviceDesc.VID_1038.PID_1634% = sshid.Device_Win11, USB\VID_1038&PID_1634&MI_02
+%DeviceDesc.VID_1038.PID_1700% = sshid.Device_Win11, USB\VID_1038&PID_1700&MI_01
+%DeviceDesc.VID_1038.PID_1702% = sshid.Device_Win11, USB\VID_1038&PID_1702&MI_01
+%DeviceDesc.VID_1038.PID_1704% = sshid.Device_Win11, USB\VID_1038&PID_1704&MI_01
+%DeviceDesc.VID_1038.PID_1706% = sshid.Device_Win11, USB\VID_1038&PID_1706&MI_01
+%DeviceDesc.VID_1038.PID_1707% = sshid.Device_Win11, USB\VID_1038&PID_1707&MI_01
+%DeviceDesc.VID_1038.PID_1708% = sshid.Device_Win11, USB\VID_1038&PID_1708&MI_01
+%DeviceDesc.VID_1038.PID_1709% = sshid.Device_Win11, USB\VID_1038&PID_1709&MI_01
+%DeviceDesc.VID_1038.PID_170A% = sshid.Device_Win11, USB\VID_1038&PID_170A&MI_01
+%DeviceDesc.VID_1038.PID_170B% = sshid.Device_Win11, USB\VID_1038&PID_170B&MI_01
+%DeviceDesc.VID_1038.PID_170C% = sshid.Device_Win11, USB\VID_1038&PID_170C&MI_01
+%DeviceDesc.VID_1038.PID_170D% = sshid.Device_Win11, USB\VID_1038&PID_170D&MI_01
+%DeviceDesc.VID_1038.PID_170E% = sshid.Device_Win11, USB\VID_1038&PID_170E&MI_01
+%DeviceDesc.VID_1038.PID_1710% = sshid.Device_Win11, USB\VID_1038&PID_1710&MI_01
+%DeviceDesc.VID_1038.PID_1712% = sshid.Device_Win11, USB\VID_1038&PID_1712&MI_01
+%DeviceDesc.VID_1038.PID_1714% = sshid.Device_Win11, USB\VID_1038&PID_1714&MI_01
+%DeviceDesc.VID_1038.PID_1716% = sshid.Device_Win11, USB\VID_1038&PID_1716&MI_01
+%DeviceDesc.VID_1038.PID_1718% = sshid.Device_Win11, USB\VID_1038&PID_1718&MI_01
+%DeviceDesc.VID_1038.PID_171A% = sshid.Device_Win11, USB\VID_1038&PID_171A&MI_01
+%DeviceDesc.VID_1038.PID_171C% = sshid.Device_Win11, USB\VID_1038&PID_171C&MI_01
+%DeviceDesc.VID_1038.PID_171E% = sshid.Device_Win11, USB\VID_1038&PID_171E&MI_01
+%DeviceDesc.VID_1038.PID_1720% = sshid.Device_Win11, USB\VID_1038&PID_1720&MI_01
+%DeviceDesc.VID_1038.PID_1722% = sshid.Device_Win11, USB\VID_1038&PID_1722&MI_01
+%DeviceDesc.VID_1038.PID_1724% = sshid.Device_Win11, USB\VID_1038&PID_1724&MI_01
+%DeviceDesc.VID_1038.PID_1726% = sshid.Device_Win11, USB\VID_1038&PID_1726&MI_01
+%DeviceDesc.VID_1038.PID_1729% = sshid.Device_Win11, USB\VID_1038&PID_1729&MI_01
+%DeviceDesc.VID_1038.PID_172B% = sshid.Device_Win11, USB\VID_1038&PID_172B&MI_01
+%DeviceDesc.VID_1038.PID_172E% = sshid.Device_Win11, USB\VID_1038&PID_172E&MI_01
+%DeviceDesc.VID_1038.PID_1730% = sshid.Device_Win11, USB\VID_1038&PID_1730&MI_01
+%DeviceDesc.VID_1038.PID_1736% = sshid.Device_Win11, USB\VID_1038&PID_1736&MI_01
+%DeviceDesc.VID_1038.PID_1800% = sshid.Device_Win11, USB\VID_1038&PID_1800&MI_01
+%DeviceDesc.VID_1038.PID_1810% = sshid.Device_Win11, USB\VID_1038&PID_1810&MI_01
+%DeviceDesc.VID_1038.PID_1814% = sshid.Device_Win11, USB\VID_1038&PID_1814&MI_01
+%DeviceDesc.VID_1038.PID_1816% = sshid.Device_Win11, USB\VID_1038&PID_1816&MI_01
+%DeviceDesc.VID_1038.PID_1824% = sshid.Device_Win11, USB\VID_1038&PID_1824&MI_00
+%DeviceDesc.VID_1038.PID_1826% = sshid.Device_Win11, USB\VID_1038&PID_1826&MI_01
+%DeviceDesc.VID_1038.PID_182A% = sshid.Device_Win11, USB\VID_1038&PID_182A&MI_01
+%DeviceDesc.VID_1038.PID_182C% = sshid.Device_Win11, USB\VID_1038&PID_182C&MI_01
+%DeviceDesc.VID_1038.PID_182E% = sshid.Device_Win11, USB\VID_1038&PID_182E&MI_01
+%DeviceDesc.VID_1038.PID_1830% = sshid.Device_Win11, USB\VID_1038&PID_1830&MI_00
+%DeviceDesc.VID_1038.PID_1832% = sshid.Device_Win11, USB\VID_1038&PID_1832&MI_01
+%DeviceDesc.VID_1038.PID_1834% = sshid.Device_Win11, USB\VID_1038&PID_1834&MI_01
+%DeviceDesc.VID_1038.PID_1836% = sshid.Device_Win11, USB\VID_1038&PID_1836&MI_00
+%DeviceDesc.VID_1038.PID_1838% = sshid.Device_Win11, USB\VID_1038&PID_1838&MI_00
+%DeviceDesc.VID_1038.PID_183A% = sshid.Device_Win11, USB\VID_1038&PID_183A&MI_00
+%DeviceDesc.VID_1038.PID_183C% = sshid.Device_Win11, USB\VID_1038&PID_183C&MI_01
+%DeviceDesc.VID_1038.PID_183E% = sshid.Device_Win11, USB\VID_1038&PID_183E&MI_01
+%DeviceDesc.VID_1038.PID_1840% = sshid.Device_Win11, USB\VID_1038&PID_1840&MI_00
+%DeviceDesc.VID_1038.PID_1842% = sshid.Device_Win11, USB\VID_1038&PID_1842&MI_00
+%DeviceDesc.VID_1038.PID_1848% = sshid.Device_Win11, USB\VID_1038&PID_1848&MI_00
+%DeviceDesc.VID_1038.PID_184A% = sshid.Device_Win11, USB\VID_1038&PID_184A&MI_00
+%DeviceDesc.VID_1038.PID_184C% = sshid.Device_Win11, USB\VID_1038&PID_184C&MI_00
+%DeviceDesc.VID_1038.PID_184D% = sshid.Device_Win11, USB\VID_1038&PID_184D&MI_00
+%DeviceDesc.VID_1038.PID_1850% = sshid.Device_Win11, USB\VID_1038&PID_1850&MI_00
+%DeviceDesc.VID_1038.PID_1852% = sshid.Device_Win11, USB\VID_1038&PID_1852&MI_00
+%DeviceDesc.VID_1038.PID_1854% = sshid.Device_Win11, USB\VID_1038&PID_1854&MI_00
+%DeviceDesc.VID_1038.PID_1856% = sshid.Device_Win11, USB\VID_1038&PID_1856&MI_01
+%DeviceDesc.VID_1038.PID_1858% = sshid.Device_Win11, USB\VID_1038&PID_1858&MI_00
+%DeviceDesc.VID_1038.PID_185A% = sshid.Device_Win11, USB\VID_1038&PID_185A&MI_00
+%DeviceDesc.VID_1038.PID_185C% = sshid.Device_Win11, USB\VID_1038&PID_185C&MI_00
+%DeviceDesc.VID_1038.PID_185E% = sshid.Device_Win11, USB\VID_1038&PID_185E&MI_00
+%DeviceDesc.VID_1038.PID_1860% = sshid.Device_Win11, USB\VID_1038&PID_1860&MI_00
+%DeviceDesc.VID_1038.PID_1862% = sshid.Device_Win11, USB\VID_1038&PID_1862&MI_00
+%DeviceDesc.VID_1038.PID_1640% = sshid.Device_Win11, USB\VID_1038&PID_1640&MI_00
+%DeviceDesc.VID_1038.PID_1640% = sshid.Device_Win11, USB\VID_1038&PID_1640&MI_02
+%DeviceDesc.VID_1038.PID_1642% = sshid.Device_Win11, USB\VID_1038&PID_1642&MI_00
+%DeviceDesc.VID_1038.PID_1642% = sshid.Device_Win11, USB\VID_1038&PID_1642&MI_02
+%DeviceDesc.VID_1038.PID_1644% = sshid.Device_Win11, USB\VID_1038&PID_1644&MI_01
+%DeviceDesc.VID_1038.PID_1646% = sshid.Device_Win11, USB\VID_1038&PID_1646&MI_01
+%DeviceDesc.VID_1038.PID_1874% = sshid.Device_Win11, USB\VID_1038&PID_1874&MI_00
+%DeviceDesc.VID_1038.PID_1876% = sshid.Device_Win11, USB\VID_1038&PID_1876&MI_00
+%DeviceDesc.VID_1038.PID_1650% = sshid.Device_Win11, USB\VID_1038&PID_1650&MI_00
+%DeviceDesc.VID_1038.PID_1650% = sshid.Device_Win11, USB\VID_1038&PID_1650&MI_02
+%DeviceDesc.VID_1038.PID_1652% = sshid.Device_Win11, USB\VID_1038&PID_1652&MI_00
+%DeviceDesc.VID_1038.PID_1652% = sshid.Device_Win11, USB\VID_1038&PID_1652&MI_02
+%DeviceDesc.VID_1038.PID_1648% = sshid.Device_Win11, USB\VID_1038&PID_1648&MI_00
+%DeviceDesc.VID_1038.PID_1648% = sshid.Device_Win11, USB\VID_1038&PID_1648&MI_02
+%DeviceDesc.VID_1038.PID_164A% = sshid.Device_Win11, USB\VID_1038&PID_164A&MI_01
+%DeviceDesc.VID_1038.PID_164C% = sshid.Device_Win11, USB\VID_1038&PID_164C&MI_01
+;; If you are adding new PID in this 10.0...22000 (Win11) section, please do not forget to add new PID in 10.0...14393 (Win10) section too
+
+[sshid.Device_Win10.NT]
+; Just copy the driver. No neeed to copy other system binaries.
+CopyFiles = CopyFilterDriver
+
+[sshid.Device_Win11.NT]
+; Just copy the driver. No neeed to copy other system binaries.
+CopyFiles = CopyFilterDriver
+Include   = MsHidKmdf.inf
+Needs     = MsHidKmdf.NT
+
+[sshid.Device_Win10.NT.HW]
+AddReg = sshid_Parameters.AddReg
+
+[sshid.Device_Win11.NT.HW]
+AddReg = sshid_Parameters.AddReg
+Include = MsHidKmdf.inf
+Needs   = MsHidKmdf.NT.HW
+
+;-------------- Service installation
+[sshid.Device_Win10.NT.Services]
+AddService = mshidkmdf, 0x000001fa, mshidkmdf.AddService ;flag 0x2 sets this as the service for the device
+AddService = sshid,, sshid_Service_Inst
+
+[sshid.Device_Win11.NT.Services]
+AddService = sshid,, sshid_Service_Inst
+Include = MsHidKmdf.inf
+Needs = MsHidKmdf.NT.Services
+
+[mshidkmdf.AddService]
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %10%\System32\Drivers\mshidkmdf.sys
+
+[sshid_Parameters.AddReg]
+HKR,,"LowerFilters",%REG_MULTI_SZ%,"sshid"
+
+; -------------- sshid driver install sections
+[CopyFilterDriver]
+sshid.sys
+
+[sshid_Service_Inst]
+DisplayName    = %sshid.SvcDesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+;;ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ErrorControl   = %SERVICE_ERROR_IGNORE%
+ServiceBinary  = %12%\sshid.sys
+
+
+;===============================================================
+;  *******Localizable Strings*******
+;===============================================================
+[Strings]
+ManufacturerName="SteelSeries ApS"
+DiskName = "SteelSeries HID Installation Disk"
+DeviceDesc = "SteelSeries HID Device"
+sshid.SvcDesc = "SteelSeries HID Service"
+
+DeviceDesc.VID_1038.PID_0472 = "SteelSeries Rival 150 Gaming Mouse"
+DeviceDesc.VID_1038.PID_0475 = "SteelSeries Rival 160 Gaming Mouse"
+DeviceDesc.VID_1038.PID_0615 = "SteelSeries Apex M650 Gaming Keyboard"
+DeviceDesc.VID_1038.PID_0616 = "SteelSeries Apex M750 Gaming Keyboard"
+DeviceDesc.VID_1038.PID_0617 = "SteelSeries Apex M750 TKL Gaming Keyboard"
+DeviceDesc.VID_1038.PID_0619 = "SteelSeries Apex M750 TKL PUBG Edition"
+DeviceDesc.VID_1038.PID_1200 = "SteelSeries Apex [RAW] Gaming Keyboard"
+DeviceDesc.VID_1038.PID_1202 = "SteelSeries Apex Gaming Keyboard"
+DeviceDesc.VID_1038.PID_1204 = "SteelSeries Guild Wars 2 Gaming Keyboard"
+DeviceDesc.VID_1038.PID_1206 = "SteelSeries Apex 350"
+DeviceDesc.VID_1038.PID_1208 = "SteelSeries Apex 300"
+DeviceDesc.VID_1038.PID_120A = "Omen Keyboard"
+DeviceDesc.VID_1038.PID_1356 = "SteelSeries Sensei Gaming Mouse"
+DeviceDesc.VID_1038.PID_1358 = "SteelSeries Sensei Gaming Mouse"
+DeviceDesc.VID_1038.PID_135A = "SteelSeries Sensei Gaming Mouse"
+DeviceDesc.VID_1038.PID_1361 = "SteelSeries Sensei Gaming Mouse"
+DeviceDesc.VID_1038.PID_1362 = "SteelSeries Diablo III Mouse"
+DeviceDesc.VID_1038.PID_1369 = "SteelSeries Sensei [RAW]"
+DeviceDesc.VID_1038.PID_136B = "SteelSeries Sensei MLG Edition"
+DeviceDesc.VID_1038.PID_136D = "SteelSeries Guild Wars 2 Gaming Mouse"
+DeviceDesc.VID_1038.PID_136F = "SteelSeries Call of Duty Gaming Mouse"
+DeviceDesc.VID_1038.PID_137C = "SteelSeries Sensei Wireless" ; mouse
+DeviceDesc.VID_1038.PID_137E = "SteelSeries Sensei Wireless" ; base station
+DeviceDesc.VID_1038.PID_1380 = "SteelSeries World of Tanks Gaming Mouse"
+DeviceDesc.VID_1038.PID_1384 = "SteelSeries Rival"
+DeviceDesc.VID_1038.PID_1386 = "SteelSeries The Sims 4 Gaming Mouse"
+DeviceDesc.VID_1038.PID_1386.2 = "USB Input Device"
+DeviceDesc.VID_1038.PID_1388 = "SteelSeries Kinzu v3"
+DeviceDesc.VID_1038.PID_1390 = "SteelSeries Heroes of the Storm Gaming Mouse"
+DeviceDesc.VID_1038.PID_1392 = "SteelSeries Rival Dota 2 Edition"
+DeviceDesc.VID_1038.PID_1394 = "SteelSeries Rival 300 CS:GO Fade Edition"
+DeviceDesc.VID_1038.PID_1600 = "SteelSeries Apex M800"
+DeviceDesc.VID_1038.PID_1603 = "SteelSeries Apex M800 Dota 2 TI5 Edition"
+DeviceDesc.VID_1038.PID_1605 = "SteelSeries Apex M800 Dota 2 Edition"
+DeviceDesc.VID_1038.PID_1607 = "SteelSeries Apex M500"
+DeviceDesc.VID_1038.PID_1609 = "SteelSeries Apex M500 Evil Geniuses"
+DeviceDesc.VID_1038.PID_160C = "SteelSeries Apex M400"
+DeviceDesc.VID_1038.PID_160E = "SteelSeries Apex 100"
+DeviceDesc.VID_1038.PID_1610 = "SteelSeries Apex Pro"
+DeviceDesc.VID_1038.PID_1612 = "SteelSeries Apex 7"
+DeviceDesc.VID_1038.PID_1614 = "SteelSeries Apex Pro TKL"
+DeviceDesc.VID_1038.PID_1616 = "SteelSeries Apex 150"
+DeviceDesc.VID_1038.PID_1618 = "SteelSeries Apex 7 TKL"
+DeviceDesc.VID_1038.PID_161A = "SteelSeries Apex 3"
+DeviceDesc.VID_1038.PID_161C = "SteelSeries Apex 5"
+DeviceDesc.VID_1038.PID_161E = "SteelSeries Apex Pro Mini"
+DeviceDesc.VID_1038.PID_1620 = "SteelSeries Apex 9 Mini"
+DeviceDesc.VID_1038.PID_1622 = "SteelSeries Apex 3 TKL"
+DeviceDesc.VID_1038.PID_1624 = "SteelSeries Apex Pro Mini Wireless" ; Dongle
+DeviceDesc.VID_1038.PID_1626 = "SteelSeries Apex Pro Mini Wireless" ; Keyboard
+DeviceDesc.VID_1038.PID_1628 = "SteelSeries Apex Pro TKL" ; 2022 Refresh
+DeviceDesc.VID_1038.PID_1630 = "SteelSeries Apex Pro TKL Wireless" ; Dongle
+DeviceDesc.VID_1038.PID_1632 = "SteelSeries Apex Pro TKL Wireless" ; Keyboard
+DeviceDesc.VID_1038.PID_1634 = "SteelSeries Apex 9 TKL"
+DeviceDesc.VID_1038.PID_1700 = "SteelSeries Rival 700"
+DeviceDesc.VID_1038.PID_1702 = "SteelSeries Rival 100"
+DeviceDesc.VID_1038.PID_1704 = "SteelSeries Rival 95" ; PC Bang
+DeviceDesc.VID_1038.PID_1706 = "SteelSeries Rival 95"
+DeviceDesc.VID_1038.PID_1707 = "SteelSeries Rival 95 MSI Edition"
+DeviceDesc.VID_1038.PID_1708 = "SteelSeries Rival 100"
+DeviceDesc.VID_1038.PID_1709 = "SteelSeries Rival 50 MSI Edition"
+DeviceDesc.VID_1038.PID_170A = "SteelSeries Rival 100 Dell Edition"
+DeviceDesc.VID_1038.PID_170B = "SteelSeries Rival 100 Dota 2 Edition"
+DeviceDesc.VID_1038.PID_170C = "SteelSeries Rival 100 Dota 2 Edition"
+DeviceDesc.VID_1038.PID_170D = "SteelSeries Rival 100 WoT"
+DeviceDesc.VID_1038.PID_170E = "SteelSeries Rival 500"
+DeviceDesc.VID_1038.PID_1710 = "SteelSeries Rival 300"
+DeviceDesc.VID_1038.PID_1712 = "SteelSeries Rival 300 Fallout 4 Edition"
+DeviceDesc.VID_1038.PID_1714 = "Predator Gaming Mouse"
+DeviceDesc.VID_1038.PID_1716 = "SteelSeries Rival 300 CS:GO Fade Edition"
+DeviceDesc.VID_1038.PID_1718 = "Omen Mouse"
+DeviceDesc.VID_1038.PID_171A = "SteelSeries Rival 300 CS:GO Hyper Beast Edition"
+DeviceDesc.VID_1038.PID_171C = "SteelSeries Rival 300 Evil Geniuses"
+DeviceDesc.VID_1038.PID_171E = "SteelSeries Rival 310 CS:GO Howl Edition"
+DeviceDesc.VID_1038.PID_1720 = "SteelSeries Rival 310 eSports Mouse"
+DeviceDesc.VID_1038.PID_1722 = "SteelSeries Sensei 310 eSports Mouse"
+DeviceDesc.VID_1038.PID_1724 = "SteelSeries Rival 600"
+DeviceDesc.VID_1038.PID_1726 = "SteelSeries Rival 650 Wireless" ; dongle
+DeviceDesc.VID_1038.PID_1729 = "SteelSeries Rival 110"
+DeviceDesc.VID_1038.PID_172B = "SteelSeries Rival 650 Wireless" ; mouse
+DeviceDesc.VID_1038.PID_172E = "SteelSeries Rival 600 Dota 2 Edition"
+DeviceDesc.VID_1038.PID_1730 = "SteelSeries Rival 710"
+DeviceDesc.VID_1038.PID_1736 = "SteelSeries Rival 310 PUBG Edition"
+DeviceDesc.VID_1038.PID_1800 = "SteelSeries Sensei Raw Optical RGB"
+DeviceDesc.VID_1038.PID_1810 = "SteelSeries Rival 300S"
+DeviceDesc.VID_1038.PID_1814 = "SteelSeries Rival 105"
+DeviceDesc.VID_1038.PID_1816 = "SteelSeries Rival 106"
+DeviceDesc.VID_1038.PID_1824 = "SteelSeries Rival 3"
+DeviceDesc.VID_1038.PID_1826 = "SteelSeries Sensei Raw Optical RGB"
+DeviceDesc.VID_1038.PID_182A = "SteelSeries Prime 6 Siege Black Ice Edition"
+DeviceDesc.VID_1038.PID_182C = "SteelSeries Prime+"
+DeviceDesc.VID_1038.PID_182E = "SteelSeries Prime"
+DeviceDesc.VID_1038.PID_1830 = "SteelSeries Rival 3 Wireless"
+DeviceDesc.VID_1038.PID_1832 = "SteelSeries Sensei Ten"
+DeviceDesc.VID_1038.PID_1834 = "SteelSeries Sensei Ten Neon Rider"
+DeviceDesc.VID_1038.PID_1836 = "SteelSeries Aerox 3"
+DeviceDesc.VID_1038.PID_1838 = "SteelSeries Aerox 3 Wireless" ; dongle
+DeviceDesc.VID_1038.PID_183A = "SteelSeries Aerox 3 Wireless" ; mouse
+DeviceDesc.VID_1038.PID_1858 = "SteelSeries Aerox 9 Wireless" ; dongle
+DeviceDesc.VID_1038.PID_185A = "SteelSeries Aerox 9 Wireless" ; mouse
+DeviceDesc.VID_1038.PID_183C = "SteelSeries Rival 5"
+DeviceDesc.VID_1038.PID_183E = "SteelSeries Rival 5 Destiny 2 Edition"
+DeviceDesc.VID_1038.PID_1840 = "SteelSeries Prime Wireless" ; dongle
+DeviceDesc.VID_1038.PID_1842 = "SteelSeries Prime Wireless" ; mouse
+DeviceDesc.VID_1038.PID_1848 = "SteelSeries Prime Mini Wireless" ; dongle
+DeviceDesc.VID_1038.PID_184A = "SteelSeries Prime Mini Wireless" ; mouse
+DeviceDesc.VID_1038.PID_184D = "SteelSeries Prime Mini"
+DeviceDesc.VID_1038.PID_184C = "SteelSeries Rival 3" ; Support for Nvidia Reflex
+DeviceDesc.VID_1038.PID_1850 = "SteelSeries Aerox 5"
+DeviceDesc.VID_1038.PID_1852 = "SteelSeries Aerox 5 Wireless" ; dongle
+DeviceDesc.VID_1038.PID_1854 = "SteelSeries Aerox 5 Wireless" ; mouse
+DeviceDesc.VID_1038.PID_1856 = "SteelSeries Prime CS:GO Neo Noir Edition"
+DeviceDesc.VID_1038.PID_185C = "SteelSeries Aerox 5 Wireless Destiny 2 Edition" ; dongle
+DeviceDesc.VID_1038.PID_185E = "SteelSeries Aerox 5 Wireless Destiny 2 Edition" ; mouse
+DeviceDesc.VID_1038.PID_1860 = "SteelSeries Aerox 5 Wireless Diablo 4 Edition" ; dongle
+DeviceDesc.VID_1038.PID_1862 = "SteelSeries Aerox 5 Wireless Diablo 4 Edition" ; mouse
+DeviceDesc.VID_1038.PID_1640 = "SteelSeries Apex Pro" ; 2024 Refresh
+DeviceDesc.VID_1038.PID_1642 = "SteelSeries Apex Pro TKL" ; 2024 Refresh
+DeviceDesc.VID_1038.PID_1644 = "SteelSeries Apex Pro TKL Wireless" ; 2024 Refresh Dongle
+DeviceDesc.VID_1038.PID_1646 = "SteelSeries Apex Pro TKL Wireless" ; 2024 Refresh Keyboard
+DeviceDesc.VID_1038.PID_1874 = "SteelSeries Aerox 9 Wireless WOW Edition" ; dongle
+DeviceDesc.VID_1038.PID_1876 = "SteelSeries Aerox 9 Wireless WOW Edition" ; mouse
+DeviceDesc.VID_1038.PID_1650 = "SteelSeries Apex 5" ; 2024 Refresh
+DeviceDesc.VID_1038.PID_1652 = "SteelSeries Apex 7" ; 2024 Refresh
+DeviceDesc.VID_1038.PID_1648 = "SteelSeries Apex Pro Mini" ; 2024 Refresh
+DeviceDesc.VID_1038.PID_164A = "SteelSeries Apex Pro Mini Wireless" ; 2024 Refresh Dongle
+DeviceDesc.VID_1038.PID_164C = "SteelSeries Apex Pro Mini Wireless" ; 2024 Refresh Keyboard
+
+;===============================================================
+;  *******Non Localizable Strings*******
+;===============================================================
+SPSVCINST_ASSOCSERVICE = 0x00000002
+
+SERVICE_BOOT_START     = 0x0
+SERVICE_SYSTEM_START   = 0x1
+SERVICE_AUTO_START     = 0x2
+SERVICE_DEMAND_START   = 0x3
+SERVICE_DISABLED       = 0x4
+
+SERVICE_KERNEL_DRIVER  = 0x1
+SERVICE_ERROR_IGNORE   = 0x0
+SERVICE_ERROR_NORMAL   = 0x1
+SERVICE_ERROR_SEVERE   = 0x2
+SERVICE_ERROR_CRITICAL = 0x3
+
+REG_EXPAND_SZ          = 0x00020000
+REG_DWORD              = 0x00010001
+REG_MULTI_SZ           = 0x00010000
+REG_BINARY             = 0x00000001
+REG_SZ                 = 0x00000000
