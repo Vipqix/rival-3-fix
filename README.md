@@ -7,7 +7,7 @@ if you dont want to install python i'll have the build in releases, smart screen
 antiviruses might flag it since it not singed and im not paying for a $200 signature
 ```
 ```
-made this because support never answered and i'm not trusting any random EXEs lol
+made repo this because support never answered and i'm not trusting any random EXEs lol
 ```
 ᲼
 # ℹ **INFO: Drivers**
