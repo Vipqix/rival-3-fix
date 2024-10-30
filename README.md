@@ -42,6 +42,14 @@ I just found the firmware somewhere in my files 👍
    - Update the firmware and then the LED on your mousewheel should change from purple/pinkish to orange or any other color.
 
 # 5. ❌ **Errors**
-   - If you update your firmware and it breaks the mouse, rerun main.py and try reinstalling firmware a couple of times.
-# ᲼
-# 🔥 And you're done. Your mouse is fixed. 🔥
+   - If you update your firmware and it breaks the mouse, rerun main.py or the software in my releases and try reinstalling firmware a couple of times.
+     
+# 6. ❔ Mouse blinks white
+if your mouse blinks white now you are going to have to re-pair it
+```
+https://www.youtube.com/watch?v=aLkxGNzxY3A
+```
+this video should help.
+
+# Mouse should work now 🔥
+If you have any more questions make a issue on the repo.
