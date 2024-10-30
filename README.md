@@ -38,7 +38,7 @@ I just found the firmware somewhere in my files 👍
    you'll have to rerun the program (so do step 4).
 
 # 4. ⏬ **Update firmware**
-   - Go into SteelSeries GG and where your mouse is it should say `CRITICAL UPDATE: Click to install new firmware.
+   - Go into SteelSeries GG and where your mouse is it should say `CRITICAL UPDATE: Click to install new firmware.`
    - Update the firmware and then the LED on your mousewheel should change from purple/pinkish to orange or any other color.
 
 # 5. ❌ **Errors**
